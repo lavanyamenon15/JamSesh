@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Home() {
+function JamWidget() {
+    
     return (
         <div></div>
     );
 }
 
-export default Home;
+export default JamWidget;

@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Home() {
+function Forum() {
+    
     return (
         <div></div>
     );
 }
 
-export default Home;
+export default Forum;
