@@ -1,5 +1,8 @@
 import logo from './logo.svg';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
+import Login from './pages/Login.js';
+import Home from './pages/Home.js'
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
       </header> */}
       <BrowserRouter>
         <Routes> 
+          <Route index={<Login/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/home" element={<Home/>}/>
           <Route path="/jams"/>

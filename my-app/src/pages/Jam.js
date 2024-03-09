@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Login() {
+function Jam() {
     
     return (
         <div></div>
     );
 }
 
-export default Login;
+export default Jam;

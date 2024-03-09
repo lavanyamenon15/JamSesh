@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Login() {
+function JamWidget() {
     
     return (
         <div></div>
     );
 }
 
-export default Login;
+export default JamWidget;
