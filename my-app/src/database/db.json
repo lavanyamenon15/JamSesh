@@ -1,0 +1,62 @@
+{
+    "Users" : [
+        {
+            "id" : "1",
+            "name" : "James",
+            "pfp" : "1",
+            "username" : "james_1234",
+            "password" : "password1234",
+            "pronouns" : "He/Him",
+            "phoneNumber": 12345,
+            "email": "james@gmail.com"
+        },
+        {
+            "id" : "2",
+            "name" : "Sneha",
+            "pfp" : "1",
+            "username" : "sneha_5678",
+            "password" : "password1234",
+            "pronouns" : "She/Her",
+            "phoneNumber": 678910,
+            "email": "sneha@gmail.com"
+        },
+        {
+            "id" : "3",
+            "name" : "Rachel",
+            "pfp" : "1",
+            "username" : "rachel1357",
+            "password" : "password1234",
+            "pronouns" : "She/They",
+            "phoneNumber": 395830,
+            "email": "rachel@gmail.com"
+        }
+    ],
+
+    "ActiveJams" : [
+        {
+            "name": "CyberTech Jam",
+            "location": "Vancouver",
+            "members": "", 
+            "description": ""
+        },
+        {
+            "name": "LLM Jam",
+            "location": "Vancouver",
+            "members": "", 
+            "description": ""
+        },
+        {
+            "name": "",
+            "location": "",
+            "members": "", 
+            "description": ""
+        }
+    ],
+
+    "Chat" : [
+        {
+            "complement" : ["That's a great idea!", "I love that idea", "omg i loveeee", "I totally think we should do that"],
+            "ideas": ["What if we "]
+        }
+    ]
+}
