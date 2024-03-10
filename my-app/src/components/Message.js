@@ -3,10 +3,12 @@ import '../css/MessageBubble.css'
 
 function Message({message, mainUser, name}) {
     if (mainUser == "true") {
-        return <div className='messageContainerRight'>
-            <div className='mainUser'>
-                <p className='messageName'> {name} </p>
-                <p className='message'> {message} </p>
+        return <div>
+            <p className='messageName'> {name} </p>
+            <div className='messageContainerRight'>
+                <div className='mainUser'>
+                    <p className='message'> {message} </p>
+                </div>
             </div>
         </div>
     }

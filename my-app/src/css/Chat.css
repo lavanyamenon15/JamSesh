@@ -1,5 +1,5 @@
 .chatWindow{
-    height: 450px;
+    height: 400px;
     width: 400px;
     background-color: gray;
     overflow: scroll;
@@ -9,22 +9,31 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 70vh;
+    height: 450px;
 }
 
 .textToSend{
     border-radius: 15px;
     position: absolute;
-    bottom: 25px; 
-    left: 40%;
-    height: 10%;
+    bottom: 20px; 
+    left: 27%;
+    height: 5%;
+    width: 300px;
 }
 
 .sendButton{
     position: absolute;
-    bottom: 25px; 
-    height: 20px;
-    width: 20px;
+    bottom: 20px; 
+    height: 5%;
+    width: 5%;
     border-radius: 100%;
-    left: 57%
+    right: 25%
+}
+
+.aiEnhance{
+    position: absolute;
+    bottom: 20px; 
+    border-radius: 15px;
+    height: 40px;
+    right: 0%
 }
