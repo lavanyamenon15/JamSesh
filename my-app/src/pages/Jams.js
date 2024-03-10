@@ -96,8 +96,9 @@ function Jams() {
         <div className='filter'> 
             <form onSubmit={handleSubmit}>
             <label>
-                Location:
+                <h3> Location: </h3>
                 <select
+                className='location'
                 type="select"
                 name="location"
                 value={formData.location}
@@ -110,8 +111,9 @@ function Jams() {
                 </select>
             </label>
             <label>
-                Tags:
+                <h3> Tags: </h3>
                 <select
+                className='tags'
                 type="select"
                 name="tags"
                 value={formData.tags}
