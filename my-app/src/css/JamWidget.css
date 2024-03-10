@@ -1,15 +1,91 @@
-.jamWidget{
-    background-color: orange;
-    width: 50%;
-    display: grid;
-    grid-gap: 10px;
-    margin: 10px;
-    align-items: center;
+.jamBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    height: 100%;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding-top: 100px;
+    padding-left: 400px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    
 }
 
+.jamWidget{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #DD517E, #E68E35);
+    width: 300px; 
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+.content {
+    flex: 1;
+}
+
+.jamName{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);  
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.jamLocation{
+    font-size: 20px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    padding-left: 30px;
+}
+.jamMembers{
+    font-size: 20px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    padding-left: 30px;
+} 
+
+.jamTags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 10px;
+    
+} 
+
+.jamT{
+    border: dashed;
+    border-radius: 10px;
+    padding:5px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
 .jamButton {
-    padding: 10px;
+    padding: 15px;
     border-radius: 15px;
-    width: 40%;
     align-items: center;
+    border:none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: auto; 
+    
+
+}
+
+.jamButton:hover{
+    background: linear-gradient(to top, #02041D, #633A73);
+    color:white;
+    transform: scale(1.1);
+    border: groove;
+    border-color: white;
+    
 }
