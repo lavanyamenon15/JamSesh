@@ -14,17 +14,45 @@ body {
     height: 50px;
 }
 
+.left_block{
+    float: left;
+    width: 15%;
+}
+
 .heading{
     color: white;
     border-radius: 30px 50px 30px 50px;
     background: radial-gradient(circle, #E68E35, #DD517E);
     padding: 10px;
-    margin-top: 30px;
-    margin-left: 10%;
+    margin-top: 25px;
+    margin-left: 30%;
     width: 100px;
     height: 25px;
 }
 
 .middle_block{
     color: white;
+    top: 30px;
+    margin-left: 8%;
+    width: 25%;
+    text-align: left;
+}
+
+.location_text{
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.tags_text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.description_text{
+    padding-top: 6px;
+    padding-bottom: 7px;
+}
+
+.member_text{
+    padding: 20px;
 }
