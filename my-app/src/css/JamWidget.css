@@ -6,8 +6,9 @@
     height: 100%;
     row-gap: 30px;
     column-gap: 30px;
-    padding-top: 100px;
-    padding-left: 400px;
+    padding-left:50px;
+
+
     padding-right: 100px;
     padding-bottom: 200px;
     
@@ -100,7 +101,8 @@
 
 .bigBoard {
     display:flex; 
-    padding: 5%;
+    justify-content: flex-start;
+    padding:100px;
   }
 
 .location {

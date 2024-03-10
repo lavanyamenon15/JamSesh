@@ -92,6 +92,7 @@ function Jams() {
 
     return (
         <div><NavBar></NavBar>
+        
         <div className='bigBoard'>
         <div className='filter'> 
             <form onSubmit={handleSubmit}>
