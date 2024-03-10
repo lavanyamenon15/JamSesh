@@ -1,0 +1,27 @@
+.notMainUser{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background-color: orange;
+}
+
+.messageName{
+    font-size: smaller;
+}
+
+.mainUser {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background-color: burlywood;
+}
+
+.messageContainerLeft{
+    justify-content: left;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.messageContainerRight{
+    justify-content: right;
+    flex-direction: column; 
+    justify-content: flex-end;
+}

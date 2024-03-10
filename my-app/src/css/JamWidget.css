@@ -1,0 +1,15 @@
+.jamWidget{
+    background-color: orange;
+    width: 50%;
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+.jamButton {
+    padding: 10px;
+    border-radius: 15px;
+    width: 40%;
+    align-items: center;
+}

@@ -41,6 +41,7 @@ function Jams() {
             {data.map((jam) => (
                 <JamWidget
                 key={jam.id}
+                id={jam.id}
                 jamName={jam.name} 
                 location={jam.location} 
                 members={jam.members.length} 

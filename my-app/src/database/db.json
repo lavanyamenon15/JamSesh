@@ -145,5 +145,22 @@
             "phoneNumber": 12349029,
             "email": "smriti@gmail.com"
         }
+    ],
+    "Chat": [
+        {
+            "text": "Hi I'm Bob!",
+            "mainUser": "false",
+            "name": "Bob"
+        },
+        {
+            "text": "Hi I'm Sally!",
+            "mainUser": "false",
+            "name": "Sally"
+        },
+        {
+            "text": "Let's talk about Large Language Models!",
+            "mainUser": "false",
+            "name": "Bob"
+        }
     ]
 }
