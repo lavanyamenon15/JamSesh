@@ -23,7 +23,7 @@ function App() {
       </header> */}
       <BrowserRouter>
         <Routes> 
-          <Route index={<Login/>} />
+          <Route path="/" element={<Login/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/home" element={<Home/>}/>
           <Route path="/jams"/>
