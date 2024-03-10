@@ -1,0 +1,80 @@
+body {
+    background: radial-gradient(circle, #02041D, #633A73);
+}
+
+.title_block{
+    color: white;
+    border-radius: 30px 50px 30px 50px;
+    background: radial-gradient(circle, #E68E35, #DD517E);
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 40%;
+    margin-bottom: 60px;
+    width: 300px;
+    height: 42px;
+}
+.mainRow {
+    display:flex;
+
+}
+.inside{
+    display:flex;
+}
+
+.left_block{
+    float: left;
+    width: 15%;
+    padding-left: 100px;
+}
+
+.heading{
+    color: white;
+    border-radius: 30px 50px 30px 50px;
+    background: radial-gradient(circle, #E68E35, #DD517E);
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 30%;
+    width: 100px;
+    height: 25px;
+}
+
+.middle_block{
+    color: white;
+    top: 30px;
+    margin-left: 8%;
+    width: 300px;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 200px;
+}
+
+.location_text{
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.tags_text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.description_text{
+    padding-top: 6px;
+    padding-bottom: 7px;
+    width: 200px;
+}
+
+.member_text{
+    padding-top: 10px;
+    
+}
+
+.member-design{
+    border: dashed;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding:5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}

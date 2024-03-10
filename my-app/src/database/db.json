@@ -305,6 +305,54 @@
       "name": "Sarah",
       "text": "No worries, I'm here for you always! \n\nLet me know if you need anything at all, my dear friend.",
       "mainUser": "false"
+    },
+    {
+      "id": "6a00",
+      "name": "me",
+      "text": "",
+      "mainUser": "true"
+    },
+    {
+      "id": "4752",
+      "name": "me",
+      "text": "",
+      "mainUser": "true"
+    },
+    {
+      "id": "bf6a",
+      "name": "Sarah",
+      "text": "Hey there, good to hear from you! And yes, I'm here to help out however I can, so feel free to ask me anything you like, and I'll respond as quickly as I can, as your helpful assistant!",
+      "mainUser": "false"
+    },
+    {
+      "id": "f13d",
+      "name": "Sarah",
+      "text": "Hey there, good to hear from you! And yes, I'm here to help out however I can, so feel free to ask me anything you like, and I'll respond as quickly as I can, as your helpful assistant!",
+      "mainUser": "false"
+    },
+    {
+      "id": "b462",
+      "name": "me",
+      "text": "",
+      "mainUser": "true"
+    },
+    {
+      "id": "93ca",
+      "name": "me",
+      "text": "",
+      "mainUser": "true"
+    },
+    {
+      "id": "f421",
+      "name": "Sarah",
+      "text": "Hey there! I can't wait to chat with you like we're long-time buds. But first, what should we chat about?",
+      "mainUser": "false"
+    },
+    {
+      "id": "e5e2",
+      "name": "Sarah",
+      "text": "Hey there, good to hear from you! And yes, I'm here to help out however I can, so feel free to ask me anything you like, and I'll respond as quickly as I can, as your helpful assistant! \n\nSafe ahead, my friend!",
+      "mainUser": "false"
     }
   ]
 }

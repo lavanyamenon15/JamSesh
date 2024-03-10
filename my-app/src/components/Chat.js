@@ -175,7 +175,7 @@ function Chat() {
     }
     
     return (
-        <div>
+        
         <div className='container'>
             <div className='chatWindow'>
                 {
@@ -188,17 +188,21 @@ function Chat() {
                     ))
                 }
             </div>
-            <input 
+            <div class="input-container">
+                <div><input 
                 className='textToSend'
                 type="text" 
                 value={inputValue} 
                 onChange={handleInputChange} 
                 placeholder="Send new message ..."
-            /> 
-            <button className='sendButton' onClick={newMessage}></button> 
-            <button className='aiEnhance' onClick={toggleAIMonitor}> Get Help from Jammy </button>
+                /> </div>
+                <div><button className='sendButton' onClick={newMessage}>Send -&gt;</button> </div>
+                <div><button className='aiEnhance' onClick={toggleAIMonitor}> Get Help from Jammy </button></div>
+            
+            </div>
+            
         </div>
-        </div>
+        
     );
 }
 

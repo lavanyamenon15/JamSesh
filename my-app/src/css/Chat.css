@@ -1,39 +1,67 @@
-.chatWindow{
-    height: 400px;
-    width: 400px;
-    background-color: gray;
-    overflow: scroll;
+.container{
+    position:relative;
+    height: 550px;
+    
 }
 
-.container{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 450px;
+.input-container{
+    display:flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-top: 10px;
+    gap:30px;
+}
+
+.chatWindow{
+    height: 400px;
+    width: 750px;
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: scroll;
+    padding:20px;
+    border-radius: 20px;
 }
 
 .textToSend{
     border-radius: 15px;
-    position: absolute;
-    bottom: 20px; 
-    left: 27%;
+    padding: 30px;
     height: 5%;
-    width: 300px;
+    width: 400px;
+    border:none;
 }
 
 .sendButton{
-    position: absolute;
-    bottom: 20px; 
-    height: 5%;
-    width: 5%;
-    border-radius: 100%;
-    right: 25%
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    background:#E68E35; 
+    border:none;
+    color:white;
+
+}
+
+.sendButton:hover{
+    background: linear-gradient(to top, #02041D, #633A73);
+    color:white;
+    transform: scale(1.1);
+    border: groove;
+    border-color: white;
+
 }
 
 .aiEnhance{
-    position: absolute;
-    bottom: 20px; 
-    border-radius: 15px;
-    height: 40px;
-    right: 0%
+    border-radius: 20px;
+    height: 50px;
+    width: 180px;
+    border:none;
+    background: #E68E35;
+    color: white;
+}
+
+.aiEnhance:hover{
+    background: linear-gradient(to top, #02041D, #633A73);
+    color:white;
+    transform: scale(1.1);
+    border: groove;
+    border-color: white;
+
 }
