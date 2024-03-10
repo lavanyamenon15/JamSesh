@@ -10,7 +10,6 @@ function Login() {
 
   const Loginmanagement = (e) => {
     e.preventDefault();
-    // Add your authentication logic here (e.g., API call or check against stored credentials)
     console.log('Username:', username);
     console.log('Password:', password);
   };
@@ -45,7 +44,9 @@ function Login() {
         </label>
         <br />
         <br />
+        <div>
         <button type="submit">Login</button>
+        </div>
       </form>
       </div>
       
