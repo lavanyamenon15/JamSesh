@@ -16,14 +16,14 @@ function Login() {
   };
 
   return (
-    <div>
-      <h2 className='Title'>Jam Sesh</h2>
-      <h3 className='Subtitle'> Infinite Ideas      One Place</h3>
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#FF0066" d="M44.2,-15.8C51.3,7.2,46.7,32.6,27.8,48.8C9,65,-24.2,72,-43.9,58.2C-63.7,44.4,-70,9.8,-60.4,-16.8C-50.9,-43.3,-25.4,-61.9,-3.4,-60.8C18.6,-59.7,37.2,-38.9,44.2,-15.8Z" transform="translate(100 100)" />
-</svg>
+    <div> 
+      <div class = "container">
+      <p className='Title'>Jam Sesh</p>
+      <p className='Subtitle'> Infinite Ideas      One Place</p>
+      </div>
+      <div class = "container2">
       <form onSubmit={Loginmanagement}>
-        <label>
+        <label className='label_design'>
           Username:
           <br />
           <input
@@ -34,7 +34,7 @@ function Login() {
         </label>
         <br />
         <br />
-        <label>
+        <label className='label_design'>
           Password:
           <br />
           <input
@@ -47,6 +47,8 @@ function Login() {
         <br />
         <button type="submit">Login</button>
       </form>
+      </div>
+      
     </div>
   );
 };
