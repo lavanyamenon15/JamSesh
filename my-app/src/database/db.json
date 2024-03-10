@@ -1,4 +1,79 @@
 {
+    "ActiveJams" : [
+        {
+            "id": 1,
+            "name": "CyberTech Jam",
+            "location": "Vancouver",
+            "members": [1,2,3,4,5,6,7], 
+            "description": "",
+            "tags": ["TECH"]
+        },
+        {
+            "id": 2,
+            "name": "LLM Jam",
+            "location": "Vancouver",
+            "members": [1,2,3,4,5,6,7], 
+            "description": "",
+            "tags": ["TECH"]
+        },
+        {
+            "id": 3,
+            "name": "Garden Building Jam",
+            "location": "Vancouver",
+            "members": [1,2,3,4,5,6,7], 
+            "description": "",
+            "tags": ["BOTANY"]
+        },
+        {
+            "id": 4,
+            "name": "Jazz Music Jam",
+            "location": "Toronto",
+            "members": [1,2,3,4,5,6,7], 
+            "description": "",
+            "tags": ["MUSIC"]
+        }, 
+        {
+            "id": 5,
+            "name": "Movie Directing Jam",
+            "location": "Vancouver",
+            "members": [1,2,3,4,5,6,7], 
+            "description": "",
+            "tags": ["FILM"]
+        }, 
+        {
+            "id": 6,
+            "name": "Colour Grading Jam",
+            "location": "Toronto",
+            "members": [1,2,3,4,5,6,7], 
+            "description": "",
+            "tags": ["TECH", "EDITING", "MOVIE"]
+        }, 
+        {
+            "id": 7,
+            "name": "Video Editing Jam",
+            "location": "Vancouver",
+            "members": [1,2,3,4,5,6,7], 
+            "description": "",
+            "tags": ["TECH", "EDITING", "MOVIE"]
+        },
+        {
+            "id": 8,
+            "name": "Game Development Jam",
+            "location": "Toronto",
+            "members": [1,2,3,4,5,6,7], 
+            "description": "",
+            "tags": ["TECH"]
+        }, 
+        {
+            "id": 9,
+            "name": "Robotics Jam",
+            "location": "Vancouver",
+            "members": [1,2,3,4,5,6,7], 
+            "description": "",
+            "tags": ["TECH"]
+        }
+    ],
+
     "Users" : [
         {
             "id" : "1",
@@ -22,41 +97,53 @@
         },
         {
             "id" : "3",
-            "name" : "Rachel",
+            "name" : "Rob",
             "pfp" : "1",
-            "username" : "rachel1357",
+            "username" : "rob1357",
             "password" : "password1234",
-            "pronouns" : "She/They",
+            "pronouns" : "he/They",
             "phoneNumber": 395830,
-            "email": "rachel@gmail.com"
-        }
-    ],
-
-    "ActiveJams" : [
-        {
-            "name": "CyberTech Jam",
-            "location": "Vancouver",
-            "members": "", 
-            "description": ""
+            "email": "rob@gmail.com"
         },
         {
-            "name": "LLM Jam",
-            "location": "Vancouver",
-            "members": "", 
-            "description": ""
+            "id" : "4",
+            "name" : "Eknoor",
+            "pfp" : "1",
+            "username" : "Eknoor1234",
+            "password" : "password1234",
+            "pronouns" : "She/Her",
+            "phoneNumber": 123603920,
+            "email": "eknoor@gmail.com"
         },
         {
-            "name": "",
-            "location": "",
-            "members": "", 
-            "description": ""
-        }
-    ],
-
-    "Chat" : [
+            "id" : "5",
+            "name" : "Lavanya",
+            "pfp" : "1",
+            "username" : "Lavanya1234",
+            "password" : "password1234",
+            "pronouns" : "She/Her",
+            "phoneNumber": 12349029,
+            "email": "lava@gmail.com"
+        },
         {
-            "complement" : ["That's a great idea!", "I love that idea", "omg i loveeee", "I totally think we should do that"],
-            "ideas": ["What if we "]
+            "id" : "6",
+            "name" : "My Lan",
+            "pfp" : "1",
+            "username" : "MyLan1234",
+            "password" : "password1234",
+            "pronouns" : "She/Her",
+            "phoneNumber": 12349029,
+            "email": "mylan@gmail.com"
+        },
+        {
+            "id" : "7",
+            "name" : "Smriti",
+            "pfp" : "1",
+            "username" : "Smriti1234",
+            "password" : "password1234",
+            "pronouns" : "She/Her",
+            "phoneNumber": 12349029,
+            "email": "smriti@gmail.com"
         }
     ]
 }
