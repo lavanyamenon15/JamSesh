@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '../components/NavBar';
+import JamWidget from '../components/JamWidget';
+import { useState } from 'react';
 import './Jam.css';
 
 function Jam() {
@@ -21,8 +23,6 @@ function Jam() {
                 <div class="Description:">This platform is for cyber security lovers. Ideas, projects, and more!</div>
                 <div class= "Members:">Smriti, My Lan, Lavenya, Eknor</div>
             </div>
-
-
         </div>
     );
 }
