@@ -6,6 +6,7 @@ import Home from './pages/Home.js'
 import NavBar from './components/NavBar.js'
 import Jams from './pages/Jams.js'
 import Jam from './pages/Jam.js'
+import Forum from './pages/Forum.js'
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/home" element={<Home/>}/>
           <Route path="/jams"element={<Jams/>} />
-          <Route path="/jams/:id" element={<Jam/>}/>
-          <Route path="/forum" element={<Jam/>}/>
+          <Route path="/jam" element={<Jam/>}/>
+          <Route path="/forum" element={<Forum/>}/>
         </Routes>
       </BrowserRouter>
     </div>
