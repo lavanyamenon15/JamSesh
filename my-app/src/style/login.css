@@ -1,0 +1,58 @@
+body {
+    background: radial-gradient(circle, #02041D, #633A73);
+}
+
+.Title{
+    background-image: linear-gradient(to bottom, #E68E35, #E68E35, #DD517E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 100px;
+    text-align: left;
+    padding-left: 35%;
+    font-family: Shrikhand;
+    margin-bottom: 0px;
+}
+
+.Subtitle{
+    background-image: linear-gradient(to bottom, #E68E35, #E68E35, #DD517E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 42%;
+    margin-top: 0;
+}
+
+.container{
+    padding-left: 2%;
+    display: flex;  /* Use flexbox to control layout */
+    flex-direction: column;  /* Stack children vertically */
+    align-items: flex-start;
+}
+
+.label_design{
+    color: white;
+}
+
+.button{
+    background-color: white; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}   
+.button:hover {
+    background-color: linear-gradient(to bottom, #E68E35, #E68E35, #DD517E);
+    color: white;
+}
+
+.container2{
+    padding-top: 7%;
+}
