@@ -45,7 +45,7 @@ function Login() {
         <br />
         <br />
         <div>
-        <button type="submit">Login</button>
+          <Link to={'/home'}> <button type="submit">Login</button></Link>
         </div>
       </form>
       </div>
