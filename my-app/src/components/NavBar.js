@@ -8,7 +8,6 @@ function NavBar() {
         <div className='navBar'>
             <button className='navButton'><Link class="a" to={"/home"}> Home </Link></button>
             <button className='navButton'><Link class="a" to={"/jams"}> Jams </Link></button>
-            <button className='navButton'><Link class="a" to={"/forum"}> Jam Forum </Link></button>
         </div>
     );
 }
