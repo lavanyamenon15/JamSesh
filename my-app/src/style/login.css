@@ -54,5 +54,10 @@ body {
 }
 
 .container2{
-    padding-top: 7%;
+    margin-top: 5%;
+    border-radius: 25px;
+    background: radial-gradient(circle, #E68E35, #DD517E);
+    padding: 20px;
+    width: 200px;
+    margin-left: 40.5%;
 }
