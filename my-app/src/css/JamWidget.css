@@ -89,3 +89,14 @@
     border-color: white;
     
 }
+
+.filter{
+    background: linear-gradient(to top, #02041D, #633A73);
+    width: 50%;
+    height: 70vp;
+}
+
+.bigBoard {
+    display: flex;
+   
+  }
