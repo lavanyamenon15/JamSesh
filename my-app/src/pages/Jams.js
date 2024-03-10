@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import JamWidget from '../components/JamWidget';
 import { useState } from 'react';
+import '../css/JamWidget.css'
 
 function Jams() {
     const [data, setData] = useState(null);
