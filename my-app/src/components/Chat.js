@@ -13,12 +13,19 @@ function Chat() {
     const handleInputChange = (event) => {
         setInputValue(event.target.value); // Update the input value state
     };
+    const [aiMonitor, setAIMonitor] = useState(false)
+    const filler = "                                                                                            "
 
     // set up cohere client 
     const { CohereClient } = require("cohere-ai");
     const cohere = new CohereClient({
         token: "IQZYFNERBlilMCbkrc9R0rOb6f6Zx5z9R4LBARbC",
     });
+
+    const toggleAIMonitor = () => {
+        setAIMonitor(!aiMonitor);
+        console.log("AI MONITOR:" , aiMonitor, " characters = ", textMonitor.length, " string = ", textMonitor)
+    };
 
     // loads message data 
     const getData = async () => {
@@ -58,18 +65,11 @@ function Chat() {
         try {
             const response = await fetch("http://localhost:3030/Chat", requestOptions); // make post request 
             const result = await response.json(); 
-            setTextMonitor(textMonitor + result);
+            setTextMonitor(String(textMonitor) + String(result.text));
             generateFakeUserMessages(inputValue); // generate fake messages using cohere chat bot 
             data.push(result) // update the data locally to get it to show up faster 
             setData([...data]);
             setInputValue('');
-            // const msg = {
-            //     name: "me",
-            //     text: fakemsg,
-            //     mainUser: "true"
-            // }
-            // setData([...data, msg]);
-            // console.log(msg);
             setLoading(false);
             console.log(result);
         } catch(e) {
@@ -115,11 +115,50 @@ function Chat() {
 
         const response = await fetch("http://localhost:3030/Chat", requestOptions);
         const result = await response.json();
-        setTextMonitor(textMonitor + result);
+        setTextMonitor(String(textMonitor) + String(result.text));
         setData([...data, result]);
     }
 
     // summarizing and generating 
+    const summarizeAndGenerate = async () => {
+        const summarizeResponse = await cohere.summarize({
+            text: textMonitor,
+            model: "command",
+            additionalCommand: "",
+            temperature: 0.3,
+        });
+
+        const summary = summarizeResponse.results?.[0].summary
+
+        const generateResponse = await cohere.generate({
+            model: "command",
+            prompt: "give me one short idea for our group that is talking about: " + summary,
+            maxTokens: 300,
+            temperature: 0.9,
+            k: 0,
+            stopSequences: [],
+            returnLikelihoods: "NONE"
+        });
+        // console.log(`Prediction: ${response.generations[0].text}`);
+
+        // console.log(`Summary: ${response.results?.[0].summary}`);
+
+        const requestOptions = {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: "Jammy (your personal AI assistant)",
+                text: generateResponse.generations[0].text,
+                mainUser: "false"
+            })
+        }
+
+        const generateIdeaMessage = await fetch("http://localhost:3030/Chat", requestOptions);
+        const ideaMessage = await generateIdeaMessage.json();
+        setData([...data, ideaMessage]);
+    }
 
     useEffect(() => {
         getData();
@@ -130,8 +169,9 @@ function Chat() {
         return <div> <p> Loading ... </p></div>
     }
 
-    if(textMonitor.length > 510){
-
+    if(textMonitor.length > 500 && aiMonitor == true){
+        summarizeAndGenerate();
+        setTextMonitor('');
     }
     
     return (
@@ -156,7 +196,7 @@ function Chat() {
                 placeholder="Send new message ..."
             /> 
             <button className='sendButton' onClick={newMessage}></button> 
-            <button className='aiEnhance' onClick={newMessage}> Get Help from Jammy </button>
+            <button className='aiEnhance' onClick={toggleAIMonitor}> Get Help from Jammy </button>
         </div>
         </div>
     );
