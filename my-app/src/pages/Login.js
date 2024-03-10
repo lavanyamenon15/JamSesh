@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
 
@@ -42,15 +41,5 @@ function Login() {
   );
 };
 
-=======
-import React from 'react';
 
-function Login() {
-    
-    return (
-        <div></div>
-    );
-}
-
->>>>>>> a8d283448726f3461500bd5f74e725954aa48a06
 export default Login;
