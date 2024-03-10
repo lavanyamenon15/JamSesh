@@ -37,17 +37,18 @@ function Jams() {
 
     return (
         <div>
-            <NavBar></NavBar>
+        <NavBar></NavBar>
+        <div class="jamBoard">
             {data.map((jam) => (
                 <JamWidget
                 key={jam.id}
-                id={jam.id}
                 jamName={jam.name} 
                 location={jam.location} 
                 members={jam.members.length} 
                 tags={jam.tags}>
                 </JamWidget>
             ))}
+        </div>
         </div>
     );
 }
