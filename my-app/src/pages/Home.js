@@ -1,7 +1,5 @@
 import React from 'react';
 import '../css/Home.css'
-
-
 import NavBar from '../components/NavBar';
 
 

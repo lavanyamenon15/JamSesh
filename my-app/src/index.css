@@ -13,18 +13,38 @@ code {
 }
 
 .navBar {
-  background-color: #482B5B;
+  background-color: rgba(255,255, 255, 0.07);
   width: auto;
   height: 8vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  padding-right: 1.5%
 }
 
 .navButton {
-  border-radius: 15%;
-  width: auto;
-  height: 60%;
-  margin: 3%;
-  padding: 10px; 
+  background-color: transparent; 
+  border: none;
+  padding: 15px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;  
+  
 }
+
+.navButton:hover {
+  background-color: rgba(255,255, 255, 0.1);
+  border-style: groove;
+  border-color: white;
+  border-radius: 15px; 
+  padding: 15px 23.5px;
+}
+
+.a {
+  color:white;
+  text-decoration: none;
+}
+
+
+
