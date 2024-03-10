@@ -3,8 +3,17 @@
     background: radial-gradient(circle, #02041D, #633A73);
 }
 
+canvas { position: relative; left:300px; top:80px;}
+
+.side {
+    display: grid;
+    padding-left:150px;
+    padding-top: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+
 .head {
-    background-image: linear-gradient(to bottom, #E68E35, #E68E35, #DD517E);
+    background-image: linear-gradient(to bottom, #E68E35, #E68E35, #E68E35, #DD517E);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
